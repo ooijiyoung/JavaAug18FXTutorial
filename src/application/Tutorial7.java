@@ -11,7 +11,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
-import javafx.scene.control.ToggleButton;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
@@ -20,7 +19,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class Tutorial7 extends Application {
-
+//submit to padlet.com/kristoradion/tutor7
 	public void start(Stage stage) throws Exception {
 		BorderPane masterPane = new BorderPane();
 		GridPane gp = new GridPane();
@@ -52,7 +51,7 @@ public class Tutorial7 extends Application {
 		cbWhen.getItems().addAll("Lunch Hour (11am - 1pm)", "Happy Hour (1pm - 6pm)","Evening (6pm - 11pm");
 		
 		CheckBox chCheras = new CheckBox("Yellow Box Karaoke Cheras Selatan");
-		CheckBox chMV = new CheckBox("Yellow Box Karaoke Mid  Valley");
+		CheckBox chMV = new CheckBox("Yellow Box Karaoke Mid Valley");
 		CheckBox chKLCC = new CheckBox("Yellow Box Karaoke KLCC");
 		
 		final ToggleGroup tgGroup = new ToggleGroup();
@@ -101,6 +100,19 @@ public class Tutorial7 extends Application {
 //	Right Side
 		TextArea taOutput = new TextArea();
 		masterPane.setRight(taOutput);
+		
+//function
+		
+	 btnSubmit.setOnAction((event)->{
+		 String name = txtName.getText();
+		 String email = txtEmail.getText();
+		 String contact = txtContact.getText();
+		 
+		 String selection = cbWhen.getValue();
+		 int whenIdx = cbWhen.getSelectionModel().getSelectedIndex();
+		 
+	 });
+		
 		Scene scene = new Scene(masterPane);  
 		scene.getStylesheets().add("/application/Tutorial7.css");
 		stage.setTitle("Tutorial 7"); 
