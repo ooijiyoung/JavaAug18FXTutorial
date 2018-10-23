@@ -1,0 +1,8 @@
+.lblTitle{
+	-fx-font-family: "Arial";
+	-fx-font-size: 32px;
+	-fx-font-weight: bold;
+	-fx-text-fill: yellow;
+	-fx-background-color: black;
+	-fx-label-padding: 10px;
+}
