@@ -92,6 +92,11 @@ public class Prac24Oct_2 extends Application{
 		stage.setScene(scene); 
 		stage.show(); 
 		
+		Stage stage2 = new Stage();
+		Scene scene2 = new Scene(fp,500,500);
+		stage2.setScene(scene2);
+		stage2.show();
+		
 		newText.requestFocus();
 	}
 	
